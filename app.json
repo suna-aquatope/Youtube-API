@@ -10,7 +10,7 @@
   "repository": "https://github.com/jane-doe/small-sharp-tool",
   "logo": "https://small-sharp-tool.com/logo.svg",
   "success_url": "/welcome",
-  "stacks": "container",
+  "stack": "container",
   "env": {
     "SECRET_TOKEN": {
       "description": "A secret key for verifying the integrity of signed cookies.",
