@@ -1,24 +1,42 @@
 {
-    "name": "slamytd",
-    "description": "ytd",
-    "logo": "https://telegra.ph/file/6507910fd06d18dfaba82.jpg",
-    "keywords": [
-      "bot",
-      "telegram",
-      "python"
-    ],
-    "repository": "https://github.com/suna-aquatope/Youtube-API",
-    "website": "https://github.com/breakdowns/slam-mirrorbot",
-    "success_url": "https://t.me/SlamMirrorSupport",
-    "stack": "container",
-    "env": {
-      "ENV": {
-        "description": "Setting this to ANYTHING will enable Webhooks when in env mode",
-        "value": "ANYTHING"
-      },
-      "addons": [
-      {
-        "plan": "heroku-postgresql"
+  "name": "Small Sharp Tool",
+  "description": "This app does one little thing, and does it well.",
+  "keywords": [
+    "productivity",
+    "HTML5",
+    "scalpel"
+  ],
+  "website": "https://small-sharp-tool.com/",
+  "repository": "https://github.com/jane-doe/small-sharp-tool",
+  "logo": "https://small-sharp-tool.com/logo.svg",
+  "success_url": "/welcome",
+  "stacks": "container",
+  "env": {
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "5"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://yt-dl.org/downloads/latest/youtube-dl"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "bundle exec rake test"
       }
-    ]
+    }
+  }
 }
