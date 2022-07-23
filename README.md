@@ -5,6 +5,7 @@ With these files you are able to create your own Youtube API with ability to sea
 [Laravel version of this package](https://github.com/MichaelBelgium/Laravel-Youtube-API)
 
 # Software requirements
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/suna-aquatope/Youtube-API)
 
 * [youtube-dl](https://rg3.github.io/youtube-dl/)
 * [ffmpeg](https://www.ffmpeg.org/) (+ [libmp3lame](http://lame.sourceforge.net/))
