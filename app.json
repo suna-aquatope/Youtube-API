@@ -1,0 +1,24 @@
+{
+    "name": "slamytd",
+    "description": "ytd",
+    "logo": "https://telegra.ph/file/6507910fd06d18dfaba82.jpg",
+    "keywords": [
+      "bot",
+      "telegram",
+      "python"
+    ],
+    "repository": "https://github.com/suna-aquatope/Youtube-API",
+    "website": "https://github.com/breakdowns/slam-mirrorbot",
+    "success_url": "https://t.me/SlamMirrorSupport",
+    "stack": "container",
+    "env": {
+      "ENV": {
+        "description": "Setting this to ANYTHING will enable Webhooks when in env mode",
+        "value": "ANYTHING"
+      },
+      "addons": [
+      {
+        "plan": "heroku-postgresql"
+      }
+    ]
+}
